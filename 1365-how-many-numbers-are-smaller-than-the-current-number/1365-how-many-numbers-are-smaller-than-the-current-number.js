@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 var smallerNumbersThanCurrent = function(nums) {
-    const sorted = [...nums].sort((a, b) => a - b);
+    const s = [...nums].sort((a, b) => a - b);
 
-return nums.map((value) => sorted.indexOf(value));
+return nums.map((value) => s.indexOf(value));
 };
